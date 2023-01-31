@@ -1,0 +1,35 @@
+.navbar--logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar--logo img {
+    width: 600px;
+    margin-top: -2px;
+}
+
+
+@media (min-width: 360px) and (max-width: 459px) {
+    .navbar--logo img {
+     width: 300px;
+     margin-top: 10px;
+    }
+ }
+
+ @media (min-width: 460px) and (max-width: 569px) {
+    .navbar--logo img {
+        width: 400px;
+        margin-top: 10px;
+       }
+}
+
+
+@media (min-width: 535px) and (max-width: 720px) {
+    .navbar--logo img {
+        width: 500px;
+        margin-top: 10px;
+    }
+}
+
+

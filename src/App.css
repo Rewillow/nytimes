@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+/* TOGGLE LIGHT/DARK MODE */
+.switch--toggle {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.label--switch {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-right: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.switch--control {
+   margin-right: 10px;
+   margin-top: 15px;
+   transform: scaleX(.8) scaleY(.8);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+
+#light {
+    background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#light .label--switch {
+    font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#light .image--article {
+    border-radius: 2px;
 }
+
+#light .navbar--container--links li {
+    list-style: none;
+    padding: 6px 12px;
+    font-size: 17px;
+}
+
+/* DARK SECTION */
+
+#dark {
+    background-color: #121212;
+}
+
+#dark .label--switch {
+    /* color: #03DAC5; */
+    color: #eaeaea;
+    font-weight: 500;
+}
+
+
+#dark .title--section {
+    color: #eaeaea;
+    border-bottom: 1px solid rgba(255, 255, 255)
+}
+
+#dark .title--article {
+    color: #eaeaea;
+}
+
+#dark .abstract--article {
+    color: #eaeaea;
+}
+
+#dark .image--article {
+    border: 1px solid #eaeaea;    
+    border-radius: 2px;
+}
+
+#dark .footer--container {
+    background-color:#3a3a3a;
+}
+
+#dark img {
+    color: #eaeaea;
+}
+
+@media (min-width: 395px) and (max-width: 495px) {
+   .label--switch {
+    font-size: 13px;
+    text-align: center;
+   }
+}
+
+@media (min-width: 350px) and (max-width: 394px) {
+    .label--switch {
+     font-size: 12px;
+     text-align: center;
+    }
+ }
+
+
+

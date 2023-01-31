@@ -1,0 +1,147 @@
+.footer--container {
+    margin-top: 20px;
+    height: 340px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+.footer--container a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer--container a:hover {
+    color: #bb86fc;
+}
+
+.footer--title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer--logo {
+    width: 420px;
+    color: white;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+}
+
+.footer--social {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    margin-top: 22px;
+    font-size: 22px;
+    padding: 2px 8px;
+    cursor: pointer;
+    color: rgb(255, 255, 255); 
+}
+
+.facebook--icon {
+    margin-right: 20px;
+}
+
+.facebook--icon:hover {
+    color: #bb86fc; 
+}
+
+.instagram--icon {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.instagram--icon:hover {
+    color: #bb86fc;
+}
+
+.twitter--icon {
+    margin-left: 20px;
+}
+.twitter--icon:hover {
+    color: #bb86fc;
+}
+
+
+.footer--sections {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer--sections ul {
+ 
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    width: 800px;
+    padding-left: 0;
+    line-height: 35px;
+    list-style: none;
+    font-size: 18px;
+    margin-top: 30px;
+    /* margin-left: 15px; */
+}
+
+ 
+
+.copyright--section {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 10px;
+ border-top: 1px solid white;
+
+}
+
+.copyright--section p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (min-width: 865px) and (max-width: 1300px) {
+    .footer--sections ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 601px) and (max-width: 864px) {
+    .footer--container {
+        height: 370px;
+    }
+
+    .footer--sections ul {
+        width: 500px;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (min-width: 451px) and (max-width: 600px) {
+    .footer--container {
+        height: 370px;
+    }
+
+    .footer--logo {
+        width: 380px;
+    }
+
+    .footer--sections ul {
+        width: 400px;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (min-width: 360px) and (max-width: 450px) {
+    .footer--container {
+        height: 430px;
+    }
+    
+    .footer--logo {
+        width: 320px;
+    }
+    
+    .footer--sections ul {
+        width: 300px;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
