@@ -23,17 +23,17 @@ const AppRouter = () => {
         <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/world" element={<World />} />
+            <Route path="/World" element={<World />} />
             <Route path="/U.S." element={<Us />} />
-            <Route path="/business" element={<Business />} />
-            <Route path="/tech" element={<Technology />} />
-            <Route path="/health" element={<Health />} />
-            <Route path="/sports" element={<Sports />} />
-            <Route path="/arts" element={<Arts />} />
-            <Route path="/books" element={<Books />} />
-            <Route path="/style" element={<Style />} />
-            <Route path="/travel" element={<Travel />} />
-            <Route path="/magazine" element={<Magazine />} />
+            <Route path="/Business" element={<Business />} />
+            <Route path="/Tech" element={<Technology />} />
+            <Route path="/Health" element={<Health />} />
+            <Route path="/Sports" element={<Sports />} />
+            <Route path="/Arts" element={<Arts />} />
+            <Route path="/Books" element={<Books />} />
+            <Route path="/Style" element={<Style />} />
+            <Route path="/Travel" element={<Travel />} />
+            <Route path="/Magazine" element={<Magazine />} />
             <Route path="/results/:term" element={<SearchResults />} />
           </Routes>
         </div>
