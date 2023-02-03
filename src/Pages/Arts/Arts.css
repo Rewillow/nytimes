@@ -77,12 +77,6 @@
     background-color: #ececec;
 }
 
-@media (min-width: 971px) and (max-width: 1100px) {
-
-   .artists--articles--container {
-      margin-top: 50px;
-   }
-}
 
 @media (min-width: 835px) and (max-width: 935px) {
      

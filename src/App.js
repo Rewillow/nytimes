@@ -1,11 +1,11 @@
 import React from "react";
 import './App.css'
 import AppRouter from "./Component/AppRouter";
-import Footer from "./Component/Footer";
-import Logo from "./Component/Logo";
-import LogoWhite from "./Component/LogoWhite"
+import Footer from "./Component/Footer/Footer";
+import Logo from "./Component/Logo/Logo";
+import LogoWhite from "./Component/Logo/LogoWhite";
 import ReactSwitch from "react-switch"
-import SearchButton from "./Component/SearchButton";
+import SearchButton from "./Component/SearchButton/SearchButton";
 import { Router } from "react-router-dom";
 
 

@@ -1,5 +1,5 @@
 import React from "react";
-import logoWhite from "../img/LogoWhite.png"
+import logoWhite from "../../img/LogoWhite.png"
 import './Logo.css'
 
 const LogoWhite = () => {

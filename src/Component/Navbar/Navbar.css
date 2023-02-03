@@ -16,10 +16,10 @@ nav li {
     font-size: 18px; 
 }
 
-nav li:hover {
+/* nav li:hover {
 	font-weight: 700;
     text-decoration: underline;
-}
+} */
 
 header .nav-btn {
 	padding: 5px;
@@ -46,9 +46,9 @@ nav {
     color: #eaeaea;
     }
     
-    #dark header .nav-links:hover {
+    /* #dark header .nav-links:hover {
     color: #eaeaea;
-    }
+    } */
     
     #dark header .nav-btn {
         color: #eaeaea;
@@ -61,7 +61,6 @@ nav {
 @media only screen and (max-width: 1024px) {
 	header .nav-btn {
 		display: block; 
-		 
 	}
 
 	header nav {
@@ -116,9 +115,9 @@ nav {
 		width: 60%;
 		display: flex;
 		flex-direction:column;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: center;
-		gap: 1.2rem;
+		gap: 1.3rem;
 		background-color: white;
 		transition: 0.7s;
 		transform: translateX(-100vh);
@@ -159,7 +158,7 @@ nav {
 		width: 60%;
 		display: flex;
 		flex-direction:column;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: center;
 		gap: 1.1rem;
 		background-color: white;

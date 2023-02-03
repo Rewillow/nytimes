@@ -1,6 +1,6 @@
 import React from "react";
 import './Loading.css'
-import loading from '../img/LoadingB.gif'
+import loading from '../../img/LoadingB.gif'
 
 const Loading = () => {
 

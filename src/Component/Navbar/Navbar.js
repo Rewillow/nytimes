@@ -18,7 +18,7 @@ const Navbar = () => {
                 <nav ref={navRef}>
                 <li><Link to="/" className="nav-links" onClick={showNavbar} >Home</Link></li>
                 <li><Link to="/world" className="nav-links" onClick={showNavbar}>World</Link></li>
-                <li><Link to="/us" className="nav-links" onClick={showNavbar}>U.S.</Link></li>
+                <li><Link to="/U.S." className="nav-links" onClick={showNavbar}>U.S.</Link></li>
                 <li><Link to="/business" className="nav-links" onClick={showNavbar}>Business</Link></li>
                 <li><Link to="/tech" className="nav-links" onClick={showNavbar}>Tech</Link></li>
                 <li><Link to="/health" className="nav-links" onClick={showNavbar}>Health</Link></li>

@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios"
-import Loading from "../../Component/Loading";
+import Loading from "../../Component/Loading/Loading";
 import {Config} from "../../Config"
 import imgA from "../../img/ImgAbsent.png"
 import './Magazine.css'

@@ -13,9 +13,9 @@ import Books from "../Pages/Books/Books";
 import Style from "../Pages/Styles/Style";
 import Travel from "../Pages/Travel/Travel";
 import Magazine from "../Pages/Magazine/Magazine";
-import Navbar from "./Navbar";
-import SearchResults from "./SearchResults";
-import SearchButton from "./SearchButton";
+import Navbar from "../Component/Navbar/Navbar";
+import SearchResults from "./SearchResults/SearchResults";
+// import SearchButton from "./SearchButton";
 
 const AppRouter = () => {
     return (
@@ -24,7 +24,7 @@ const AppRouter = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/world" element={<World />} />
-            <Route path="/us" element={<Us />} />
+            <Route path="/U.S." element={<Us />} />
             <Route path="/business" element={<Business />} />
             <Route path="/tech" element={<Technology />} />
             <Route path="/health" element={<Health />} />
@@ -34,7 +34,7 @@ const AppRouter = () => {
             <Route path="/style" element={<Style />} />
             <Route path="/travel" element={<Travel />} />
             <Route path="/magazine" element={<Magazine />} />
-            <Route path="/results" element={<SearchResults />} />
+            <Route path="/results/:term" element={<SearchResults />} />
           </Routes>
         </div>
     )

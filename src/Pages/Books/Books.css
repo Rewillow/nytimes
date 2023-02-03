@@ -31,7 +31,6 @@
 
 .books--news--img {     
     width: 400px;
-     
     border-radius: 5px;
 }
 
@@ -47,6 +46,7 @@
     font-size: 15px;
     margin-top: 10px; 
 }
+
 
 #dark .books--title--article {
     color: #ececec;
