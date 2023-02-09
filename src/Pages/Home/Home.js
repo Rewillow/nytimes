@@ -7,19 +7,15 @@ import '../Home/Home.css'
 
 
 const Home = () => {
- 
     const [articles, setArticles] = React.useState([])
     const [isLoading, setIsLoading] = React.useState(true)
     
-    
-
     React.useEffect(() => {
        axios.get(`https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=${Config.apiKey}`)
        .then((data) => {
               setArticles(data.data?.results)
               setIsLoading(false)
-       })
-       },[])
+       })},[])
        
        const topNews = articles.slice(0,1)
        const miniNews = articles.slice(2,5)
@@ -33,8 +29,7 @@ const Home = () => {
             window.location.pathname = section
            } else {
             window.location.pathname = "/"
-           }
-       }
+           }}
 
       return <>
            {isLoading ? <Loading /> : 
