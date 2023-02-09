@@ -4,20 +4,11 @@ import Loading from "../../Component/Loading/Loading";
 import {Config} from "../../Config"
 import imgA from "../../img/ImgAbsent.png"
 import './Travel.css'
+import ClientAPI from "../../Component/ClientAPI";
 
 
 const Travel = () => {
-    const [travels, setTravels] = React.useState([])
-    const [isLoading, setIsLoading] = React.useState(true)
-
-    React.useEffect(() => {
-        axios.get(`https://api.nytimes.com/svc/news/v3/content/nyt/travel.json?api-key=${Config.apiKey}`)
-        .then((data) => {
-               setTravels(data.data?.results)
-               setIsLoading(false)
-        })
-        },[])
-
+        const {travels, isLoading} = ClientAPI()
         const travelsNews = travels.slice(0,19)
 
         return <>

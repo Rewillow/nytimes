@@ -4,20 +4,11 @@ import Loading from "../../Component/Loading/Loading";
 import {Config} from "../../Config"
 import imgA from "../../img/ImgAbsent.png"
 import './Books.css'
+import ClientAPI from "../../Component/ClientAPI";
 
 
 const Books = () => {
-    const [books, setBook] = React.useState([])
-    const [isLoading, setIsLoading] = React.useState(true)
-
-    React.useEffect(() => {
-        axios.get(`https://api.nytimes.com/svc/news/v3/content/nyt/books.json?api-key=${Config.apiKey}`)
-        .then((data) => {
-               setBook(data.data?.results)
-               setIsLoading(false)
-        })
-        },[])
-
+        const {books, isLoading} = ClientAPI()
         const booksNews = books.slice(0,19)
 
         return <>

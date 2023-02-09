@@ -1,23 +1,12 @@
 import React from "react";
-import axios from "axios"
 import Loading from "../../Component/Loading/Loading";
-import {Config} from "../../Config"
 import imgA from "../../img/ImgAbsent.png"
 import './Technology.css'
+import ClientAPI from "../../Component/ClientAPI";
 
 
 const Technology = () => {
-    const [techs, setTechs] = React.useState([])
-    const [isLoading, setIsLoading] = React.useState(true)
-
-    React.useEffect(() => {
-        axios.get(`https://api.nytimes.com/svc/news/v3/content/nyt/technology.json?api-key=${Config.apiKey}`)
-        .then((data) => {
-               setTechs(data.data?.results)
-               setIsLoading(false)
-        })
-        },[])
-
+        const {techs, isLoading} = ClientAPI()
         const techsNews = techs.slice(0,19)
 
         return <>

@@ -1,7 +1,6 @@
 import React from "react";
-import axios from "axios"
 import Loading from "../../Component/Loading/Loading";
-import { Config } from "../../Config";
+import ClientAPI from "../../Component/ClientAPI";
 import imgA from "../../img/ImgAbsent.png"
 import './Arts.css'
 
@@ -9,17 +8,7 @@ import './Arts.css'
 
 
 const Arts = () => {
-    const [artists, setArtists] = React.useState([])
-    const [isLoading, setIsLoading] = React.useState(true)
-
-    React.useEffect(() => {
-        axios.get(`https://api.nytimes.com/svc/news/v3/content/nyt/arts.json?api-key=${Config.apiKey}`)
-        .then((data) => {
-               setArtists(data.data?.results)
-               setIsLoading(false)
-        })
-        },[])
-
+        const {artists, isLoading} = ClientAPI() 
         const artistsNews = artists.slice(0,19)
 
         return <> 

@@ -3,24 +3,17 @@ import axios from "axios"
 import Loading from "../../Component/Loading/Loading";
 import {Config} from "../../Config"
 import imgA from "../../img/ImgAbsent.png"
+import ClientAPI from "../../Component/ClientAPI";
 import './World.css'
 
 
 
 
 const World = () => {
-    const [worlds, setWorlds] = React.useState([])
-    const [isLoading, setIsLoading] = React.useState(true)
+const {worlds, isLoading} = ClientAPI()
+const worldNews = worlds.slice(0,19)
 
-    React.useEffect(() => {
-        axios.get(`https://api.nytimes.com/svc/news/v3/content/nyt/world.json?api-key=${Config.apiKey}`)
-        .then((data) => {
-               setWorlds(data.data?.results)
-               setIsLoading(false)
-        })
-        },[])
 
-    const worldNews = worlds.slice(0,19)
 
     return <>
           <div className="world--title--section">

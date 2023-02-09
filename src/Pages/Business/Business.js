@@ -1,23 +1,12 @@
 import React from "react";
-import axios from "axios"
 import Loading from "../../Component/Loading/Loading";
-import {Config} from "../../Config"
 import imgA from "../../img/ImgAbsent.png"
 import './Business.css'
+import ClientAPI from "../../Component/ClientAPI";
 
 
 const Business = () => {
-    const [business, setBusiness] = React.useState([])
-    const [isLoading, setIsLoading] = React.useState(true)
-
-    React.useEffect(() => {
-        axios.get(`https://api.nytimes.com/svc/news/v3/content/nyt/business.json?api-key=${Config.apiKey}`)
-        .then((data) => {
-               setBusiness(data.data?.results)
-               setIsLoading(false)
-        })
-        },[])
-
+        const {business, isLoading} = ClientAPI()
         const businessNews = business.slice(0,19)
 
         return <>

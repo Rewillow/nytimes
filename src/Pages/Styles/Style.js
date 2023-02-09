@@ -1,23 +1,12 @@
 import React from "react";
-import axios from "axios"
 import Loading from "../../Component/Loading/Loading";
-import {Config} from "../../Config"
 import imgA from "../../img/ImgAbsent.png"
 import './Style.css'
+import ClientAPI from "../../Component/ClientAPI";
 
 
 const Style = () => {
-    const [styles, setStyles] = React.useState([])
-    const [isLoading, setIsLoading] = React.useState(true)
-
-    React.useEffect(() => {
-        axios.get(`https://api.nytimes.com/svc/news/v3/content/nyt/style.json?api-key=${Config.apiKey}`)
-        .then((data) => {
-               setStyles(data.data?.results)
-               setIsLoading(false)
-        })
-        },[])
-
+        const {styles, isLoading} = ClientAPI()
         const stylesNews = styles.slice(0,19)
 
         return <>
