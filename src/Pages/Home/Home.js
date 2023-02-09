@@ -4,18 +4,29 @@ import Loading from "../../Component/Loading/Loading";
 import { Config } from "../../Config";
 import imgA from "../../img/ImgAbsent.png"
 import '../Home/Home.css'
-import ClientAPI from '../../Component/ClientAPI'
 
 
 const Home = () => {
-       const {articles,isLoading} = ClientAPI()
+ 
+    const [articles, setArticles] = React.useState([])
+    const [isLoading, setIsLoading] = React.useState(true)
+    
+    
+
+    React.useEffect(() => {
+       axios.get(`https://api.nytimes.com/svc/news/v3/content/all/all.json?api-key=${Config.apiKey}`)
+       .then((data) => {
+              setArticles(data.data?.results)
+              setIsLoading(false)
+       })
+       },[])
+       
        const topNews = articles.slice(0,1)
        const miniNews = articles.slice(2,5)
        const firstLineNews = articles.slice(6,18)
 
        const validSections = ["World", "U.S.", "Business", "Tech", "Health", 
-       "Sports", "Arts", "Books", "Style", "Travel", 
-       "Magazine" ]
+       "Sports", "Arts", "Books", "Style", "Travel", "Magazine" ]
 
        const handleSections = (section) => {
            if(validSections.includes(section)) {
@@ -25,8 +36,6 @@ const Home = () => {
            }
        }
 
- 
-       
       return <>
            {isLoading ? <Loading /> : 
                    <div className="home--articles--container">
@@ -91,5 +100,4 @@ const Home = () => {
 }
 
 export default Home 
-
 

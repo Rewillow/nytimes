@@ -1,12 +1,22 @@
 import React from "react";
+import axios from "axios"
 import Loading from "../../Component/Loading/Loading";
+import {Config} from "../../Config"
 import imgA from "../../img/ImgAbsent.png"
-import ClientAPI from "../../Component/ClientAPI";
 import './Sports.css'
 
-
 const Sports = () => {
-        const {players, isLoading} = ClientAPI()
+    const [players, setPlayers] = React.useState([])
+    const [isLoading, setIsLoading] = React.useState(true)
+
+    React.useEffect(() => {
+        axios.get(`https://api.nytimes.com/svc/news/v3/content/nyt/sports.json?api-key=${Config.apiKey}`)
+        .then((data) => {
+               setPlayers(data.data?.results)
+               setIsLoading(false)
+        })
+        },[])
+
         const playersNews = players.slice(0,19)
 
         return <>
