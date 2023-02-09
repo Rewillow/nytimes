@@ -33,8 +33,8 @@ const Arts = () => {
             const {title, abstract, multimedia, url, slug_name} = player
             return (
                 <div className="artists--article--single" key={slug_name}>
-                  <a href={url}><img src={multimedia ? multimedia[2].url : imgA} className="artists--news--img" ></img></a>
-                         <h2 ><a href={url} className="artists--title--article">{title}</a></h2>
+                  <a href={url} target="_blank"><img src={multimedia ? multimedia[2].url : imgA} className="artists--news--img" ></img></a>
+                         <h2 ><a href={url} target="_blank" className="artists--title--article">{title}</a></h2>
                          <p className="artists--abstract--article">{abstract ? abstract : "For more information open the news."}</p>  
                 </div>
             )

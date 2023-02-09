@@ -31,8 +31,8 @@ const Travel = () => {
             const {title, abstract, multimedia, url, slug_name} = player
             return (
                 <div className="travels--article--single" key={slug_name}>
-                  <a href={url}><img src={multimedia ? multimedia[2].url : imgA} className="travels--news--img" ></img></a>
-                         <h2 ><a href={url} className="travels--title--article">{title}</a></h2>
+                  <a href={url} target="_blank"><img src={multimedia ? multimedia[2].url : imgA} className="travels--news--img" ></img></a>
+                         <h2 ><a href={url} target="_blank" className="travels--title--article">{title}</a></h2>
                          <p className="travels--abstract--article">{abstract ? abstract : "For more information open the news."}</p>  
                 </div>
             )

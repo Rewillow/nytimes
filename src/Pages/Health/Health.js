@@ -31,8 +31,8 @@ const Health = () => {
             const {title, abstract, multimedia, url, slug_name} = heart
             return (
                 <div className="health--article--single" key={slug_name}>
-                    <a href={url}><img src={multimedia ? multimedia[2].url : imgA} className="health--news--img" ></img></a>
-                         <h2 ><a href={url} className="health--title--article">{title}</a></h2>
+                    <a href={url} target="_blank"><img src={multimedia ? multimedia[2].url : imgA} className="health--news--img" ></img></a>
+                         <h2 ><a href={url} target="_blank" className="health--title--article">{title}</a></h2>
                          <p className="health--abstract--article">{abstract ? abstract : "For more information open the news."}</p>
                          
                 </div>

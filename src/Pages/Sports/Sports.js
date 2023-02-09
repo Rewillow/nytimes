@@ -30,8 +30,8 @@ const Sports = () => {
             const {title, abstract, multimedia, url, slug_name} = player
             return (
                 <div className="players--article--single" key={slug_name}>
-                  <a href={url}><img src={multimedia ? multimedia[2].url : imgA} className="players--news--img" ></img></a>
-                         <h2 ><a href={url} className="players--title--article">{title}</a></h2>
+                  <a href={url} target="_blank"><img src={multimedia ? multimedia[2].url : imgA} className="players--news--img" ></img></a>
+                         <h2 ><a href={url} target="_blank" className="players--title--article">{title}</a></h2>
                          <p className="players--abstract--article">{abstract ? abstract : "For more information open the news."}</p>  
                 </div>
             )

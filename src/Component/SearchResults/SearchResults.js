@@ -56,9 +56,9 @@ const SearchResults = () => {
          }
           return (
               <div key={_id} className="search--article--single">
-              <a href={web_url}><img src={ imageURL || imgA} className="search--news--img"></img></a>
+              <a href={web_url} target="_blank"><img src={ imageURL || imgA} className="search--news--img"></img></a>
               <h3 className="search--section--article" onClick={() => handleSection(section_name)}>{section_name}</h3>
-              <h2><a href={web_url} className="search--title--article">{headline.main}</a></h2>
+              <h2><a href={web_url} target="_blank" className="search--title--article">{headline.main}</a></h2>
               <p className="search--abstract--article">{abstract}</p>
               </div>
             )
