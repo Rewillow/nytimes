@@ -31,6 +31,10 @@
     border-radius: 5px;
 }
 
+.search--news--img:hover {
+    box-shadow: 6px 6px 6px #848484;
+}
+
 .search--section--article {
     margin-top: 8px;
     width: 100%;
@@ -50,6 +54,10 @@
     text-transform: capitalize;
 }
 
+.search--title--article:hover {
+    color:rgb(153, 90, 189);
+}
+
 .search--abstract--article {
     width: 400px;
     font-size: 15px;
@@ -66,6 +74,10 @@
 
 #dark .search--title--article {
     color: #ececec;
+}
+
+#dark .search--title--article:hover {
+    color:rgb(153, 90, 189);
 }
 
 #dark .search--abstract--article {
