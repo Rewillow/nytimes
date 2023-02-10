@@ -82,7 +82,7 @@ const Home = () => {
                               <a href={url} target="_blank"><img src={multimedia ? multimedia[2].url : imgA} className="main--articles--img"></img></a>
                               <h3 className="main--articles--section" onClick={() => handleSections(section)}>{section}</h3>
                                <div className="main--articles--info--text">
-                                  <h2 ><a href={url} className="main--articles--title" target="_blank">{title ? title : "Title not avaible."}</a></h2>
+                                  <h2 ><a href={url} className="main--articles--title" target="_blank" rel="noreferrer noopener">{title ? title : "Title not avaible."}</a></h2>
                                   <p className="main--articles--abstract">{abstract ? abstract : "Abstract not avaible. For more details open the news."}</p>
                                </div>
                               </div>
@@ -95,4 +95,3 @@ const Home = () => {
 }
 
 export default Home 
-

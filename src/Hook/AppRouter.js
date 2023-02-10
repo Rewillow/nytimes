@@ -2,20 +2,10 @@ import React from "react";
 
 import {Routes, Route} from 'react-router-dom'
 import Home from "../Pages/Home/Home"
-import World from "../Pages/World/World"
-import Us from "../Pages/US/Us";
-import Business from "../Pages/Business/Business";
-import Technology from "../Pages/Technology/Technology";
-import Health from "../Pages/Health/Health";
-import Sports from "../Pages/Sports/Sports";
-import Arts from "../Pages/Arts/Arts";
-import Books from "../Pages/Books/Books";
-import Style from "../Pages/Styles/Style";
-import Travel from "../Pages/Travel/Travel";
-import Magazine from "../Pages/Magazine/Magazine";
 import Navbar from "../Component/Navbar/Navbar";
-import SearchResults from "./SearchResults/SearchResults";
-// import SearchButton from "./SearchButton";
+import SearchResults from "../Component/SearchResults/SearchResults";
+import { World, Us, Sports, Business, Technology, Health, Books, Style, Travel, Magazine} from "./RenderPage";
+import Arts from "./RenderPage";
 
 const AppRouter = () => {
     return (

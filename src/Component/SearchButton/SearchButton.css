@@ -18,6 +18,10 @@
     cursor: pointer;
 }
 
+.button--search:hover {
+    background-color: #bebebe; 
+}
+
 .button--go--search {
     display: flex;
     justify-content: center;
@@ -31,6 +35,10 @@
     font-weight: 700;
     background-color: #eaeaea;
     cursor: pointer; 
+}
+
+.button--go--search:hover {
+    background-color: #bebebe; 
 }
 
 .search--icon {

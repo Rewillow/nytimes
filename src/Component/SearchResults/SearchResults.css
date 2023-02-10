@@ -39,7 +39,7 @@
     text-decoration: underline;
     color: #000000;
     font-size: 17px;
- 
+    cursor: pointer;
 }
 
 .search--title--article {

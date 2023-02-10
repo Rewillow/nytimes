@@ -8,6 +8,7 @@
 
 .artists--title--section h1 {
     font-size: 45px;
+    text-transform: capitalize;
  }
 
  #dark .artists--title--section h1 {
@@ -34,11 +35,19 @@
     border-radius: 5px;
 }
 
+.artists--news--img:hover {
+   box-shadow: 5px 5px 5px #848484;
+}
+
 .artists--title--article {
     display: flex;
     width: 400px;
     font-size: 20px; 
     margin-top: 10px;   
+}
+
+.artists--title--article:hover {
+   color:rgb(153, 90, 189);
 }
 
 .artists--abstract--article {   
@@ -51,6 +60,10 @@
     color: #ececec;
 }
 
+#dark .artists--title--article:hover {
+	color:rgb(153, 90, 189);
+}
+
 #dark .artists--abstract--article {
     color: #ececec;
 }
@@ -58,8 +71,6 @@
 #dark .artists--news--img {
     border: 1px solid #ececec;
 }
-
-
 
 /* LINE */
 
@@ -168,20 +179,19 @@
 
    .artists--article--single {
       height: 100%;
-      margin-top: 30px; 
-      width: 100%;
+      margin-top: 30px;  
    }
 
    .artists--news--img {
-      width: 400px;
+      width: 390px;
    }
 
    .artists--title--article {
-      width: 400px;
+      width: 390px;
    }
 
    .artists--abstract--article {
-      width: 400px;
+      width: 390px;
    }
 }
 
@@ -196,18 +206,17 @@
    .artists--article--single {
       height: 100%;
       margin-top: 30px; 
-      width: 100%;
    }
 
    .artists--news--img {
-      width: 320px;
+      width: 310px;
    }
 
    .artists--title--article {
-      width: 320px;
+      width: 310px;
    }
 
    .artists--abstract--article {
-      width: 320px;
+      width: 310px;
    }
 }

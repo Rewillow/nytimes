@@ -1,12 +1,11 @@
 import React from "react";
 import './App.css'
-import AppRouter from "./Component/AppRouter";
+import AppRouter from "./Hook/AppRouter";
 import Footer from "./Component/Footer/Footer";
 import Logo from "./Component/Logo/Logo";
 import LogoWhite from "./Component/Logo/LogoWhite";
 import ReactSwitch from "react-switch"
 import SearchButton from "./Component/SearchButton/SearchButton";
-import { Router } from "react-router-dom";
 
 
 export const ThemeContext = React.createContext(null)
