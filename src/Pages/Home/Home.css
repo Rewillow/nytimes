@@ -86,7 +86,7 @@ a {
 }
 
 .mini--news--info--text {
-    font-size: 13px;
+    font-size: 12px;
     margin-left: 10px;
     height: 190px;
 }
@@ -99,7 +99,6 @@ a {
     font-weight: 500;
     text-decoration: underline;
     font-size: 15px;
- 
 }
 
 .mini--news--img {
