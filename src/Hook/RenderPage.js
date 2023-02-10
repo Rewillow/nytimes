@@ -21,25 +21,25 @@ const Category = (props) => {
 
   return (
     <>
-      <div className="artists--title--section">
+      <div className="render--title--section">
         <h1>{props.category}</h1>
       </div>
-      <div className="artists--dividing--line"></div>
+      <div className="render--dividing--line"></div>
       {isLoading ? <Loading /> :
-        <div className="artists--articles--container">
+        <div className="render--articles--container">
           {results.map((item) => {
             const { title, abstract, multimedia, url, slug_name } = item;
             return (
-              <div className="artists--article--single" key={slug_name}>
+              <div className="render--article--single" key={slug_name}>
                 <a href={url} target="_blank">
-                  <img src={multimedia ? multimedia[2].url : imgA} className="artists--news--img" />
+                  <img src={multimedia ? multimedia[2].url : imgA} className="render--news--img" />
                 </a>
                 <h2>
-                  <a href={url} target="_blank" rel="noreferrer noopener" className="artists--title--article">
+                  <a href={url} target="_blank" rel="noreferrer noopener" className="render--title--article">
                     {title}
                   </a>
                 </h2>
-                <p className="artists--abstract--article">
+                <p className="render--abstract--article">
                   {abstract ? abstract : "For more information open the news."}
                 </p>
               </div>
