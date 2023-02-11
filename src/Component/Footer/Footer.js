@@ -32,9 +32,9 @@ const Footer = () => {
                 <li><a href="magazine">Magazine</a></li>
             </ul>
             <div className="footer--social">
-            <a href="https://www.facebook.com/nytimes/"><FiFacebook className="facebook--icon"/></a>
-            <a href="https://www.instagram.com/nytimes/"><BsInstagram className="instagram--icon"/></a>
-            <a href="https://twitter.com/nytimes"><FiTwitter className="twitter--icon"/></a>
+            <a href="https://www.facebook.com/nytimes/" target="_blank" rel="noreferrer noopener"><FiFacebook className="facebook--icon"/></a>
+            <a href="https://www.instagram.com/nytimes/" target="_blank" rel="noreferrer noopener"><BsInstagram className="instagram--icon"/></a>
+            <a href="https://twitter.com/nytimes" target="_blank" rel="noreferrer noopener"><FiTwitter className="twitter--icon"/></a>
             </div>
             </div>
             <div className="copyright--section">

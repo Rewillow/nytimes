@@ -1,8 +1,8 @@
-import imgA from "../img/ImgAbsent.png"
+import imgA from "../../img/ImgAbsent.png"
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Config } from "../Config";
-import Loading from "../Component/Loading/Loading";
+import { Config } from "../../Config";
+import Loading from "../Loading/Loading";
 import "./RenderPage.css"
 
 const Category = (props) => {

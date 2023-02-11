@@ -2,10 +2,10 @@ import React from "react";
 
 import {Routes, Route} from 'react-router-dom'
 import Home from "../Pages/Home/Home"
-import Navbar from "../Component/Navbar/Navbar";
-import SearchResults from "../Component/SearchResults/SearchResults";
-import { World, Us, Sports, Business, Technology, Health, Books, Style, Travel, Magazine} from "./RenderPage";
-import Arts from "./RenderPage";
+import Navbar from "./Navbar/Navbar";
+import SearchResults from "./SearchResults/SearchResults";
+import { World, Us, Sports, Business, Technology, Health, Books, Style, Travel, Magazine} from "./RenderPage/RenderPage";
+import Arts from "./RenderPage/RenderPage";
 
 const AppRouter = () => {
     return (
