@@ -42,7 +42,7 @@ const SearchResults = () => {
         <div className="title--article">
         <h1 className="title">Search results for:  {term} </h1>
         </div>
-        <div className="books--dividing--line"></div>
+        <div className="render--dividing--line"></div>
         {isLoading ? <Loading /> : 
         <div className="search--articles--container">        
         {searchArticles.map((article) => {

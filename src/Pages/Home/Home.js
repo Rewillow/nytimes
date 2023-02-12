@@ -44,10 +44,10 @@ const Home = () => {
                           return (
                           <div className="top--news--container" key={slug_name}>
                               <div className="top--news--data" key={slug_name}>
-                              <a href={url} target="_blank"><img src={multimedia ? multimedia[2].url : imgA} className="top--news--img"></img></a>
+                              <a href={url} target="_blank" rel="noreferrer noopener"><img src={multimedia ? multimedia[2].url : imgA} className="top--news--img"></img></a>
                               <h3 className="top--news--section" onClick={() => handleSections(section)}>{section}</h3>
                                <div className="top--news--info--text">  
-                                  <h2 className="top--news--title--h2" ><a href={url} className="top--news--title" target="_blank">{title}</a></h2>
+                                  <h2 className="top--news--title--h2" ><a href={url} className="top--news--title" target="_blank" rel="noreferrer noopener">{title}</a></h2>
                                   <h4 className="top--news--abstract">{abstract ? abstract : "For more details open the news."}</h4>
                                </div>
                               </div>
@@ -59,10 +59,10 @@ const Home = () => {
                               const {title, abstract, multimedia, url, slug_name, section} = article
                               return (
                                 <div className="mini--news--container" key={slug_name}>
-                                 <a href={url} target="_blank"><img src={multimedia ? multimedia[2].url : imgA} className="mini--news--img"></img></a>
+                                 <a href={url} target="_blank" rel="noreferrer noopener"><img src={multimedia ? multimedia[2].url : imgA} className="mini--news--img"></img></a>
                                   <div className="mini--news--info--text">
                                   <h3 className="mini--news--section" onClick={() => handleSections(section)}>{section}</h3>
-                                      <h2 className="mini--news--title--h2"><a href={url} className="mini--news--title" target="_blank">{title}</a></h2>
+                                      <h2 className="mini--news--title--h2"><a href={url} className="mini--news--title" target="_blank" rel="noreferrer noopener">{title}</a></h2>
                                       <p className="mini--news--abstract">{abstract ? abstract : "For more details open the news."}</p>
                                   </div>
                                 </div>
@@ -79,7 +79,7 @@ const Home = () => {
                           return (
                           <div className="main--articles--container" key={slug_name}>
                               <div className="main--articles--data" key={slug_name}>
-                              <a href={url} target="_blank"><img src={multimedia ? multimedia[2].url : imgA} className="main--articles--img"></img></a>
+                              <a href={url} target="_blank"><img src={multimedia ? multimedia[2].url : imgA} className="main--articles--img" rel="noreferrer noopener"></img></a>
                               <h3 className="main--articles--section" onClick={() => handleSections(section)}>{section}</h3>
                                <div className="main--articles--info--text">
                                   <h2 ><a href={url} className="main--articles--title" target="_blank" rel="noreferrer noopener">{title ? title : "Title not avaible."}</a></h2>

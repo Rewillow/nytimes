@@ -1,6 +1,6 @@
 import React from "react";
 import './Footer.css'
-import logowhite from '../../img/LogoWhite.png'
+import logoWhite from '../../img/LogoWhite.png'
 
 
 // SOCIAL ICON
@@ -14,7 +14,7 @@ const Footer = () => {
     return (
         <footer className="footer--container">
             <div className="footer--title">
-            <a href="/"><img src={logowhite} className="footer--logo" alt="logo"></img></a> 
+            <a href="/"><img src={logoWhite} className="footer--logo" alt="logo"></img></a> 
             </div>
             <div className="footer--sections">
             <ul>
