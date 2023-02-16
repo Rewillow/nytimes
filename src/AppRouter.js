@@ -1,10 +1,10 @@
 import React from "react";
 
 import {Routes, Route} from 'react-router-dom'
-import Home from "../Pages/Home/Home"
-import Navbar from "./Navbar/Navbar";
-import SearchResults from "./SearchResults/SearchResults";
-import Category from "./RenderPage/RenderPage";
+import Home from "./Pages/Home/Home"
+import Navbar from "./Component/Navbar/Navbar";
+import SearchResults from "./Component/SearchResults/SearchResults";
+import Category from "./Component/RenderPage/RenderPage";
 
 const AppRouter = () => {
     return (
@@ -13,7 +13,7 @@ const AppRouter = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/world" element={<Category category="world" />} />
-            <Route path="/u.s." element={<Category category="u.s." />} />
+            <Route path="/us" element={<Category category="u.s." />} />
             <Route path="/business" element={<Category category="business" />} />
             <Route path="/tech" element={<Category category="technology" />} />
             <Route path="/health" element={<Category category="health" />} />

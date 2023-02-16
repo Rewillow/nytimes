@@ -1,6 +1,6 @@
 import React from "react";
 import './App.css'
-import AppRouter from "./Component/AppRouter";
+import AppRouter from "./AppRouter";
 import Footer from "./Component/Footer/Footer";
 import Logo from "./Component/Logo/Logo";
 import LogoWhite from "./Component/Logo/LogoWhite";
